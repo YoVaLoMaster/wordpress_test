@@ -1,0 +1,49 @@
+/*
+==============================
+Colors
+==============================
+*/
+.color-white{
+    color:#f2f2e5!important;
+}
+.color-green{
+    color:#172c1d!important;
+}
+.color-green-dark{
+    color:#404537!important;
+}
+.bg-white{
+    background-color:#f2f2e5!important;
+}
+.bg-gray{
+    background-color:#f2f2e5!important;
+}
+.bg-red{
+    background-color:#ff0000!important;
+}
+.bg-transparent{
+    background-color:transparent!important;
+}
+.opacity-color{
+    opacity: 0.3!important;
+}
+.border-b{
+    border-bottom:1px solid #1c2b1e;
+}
+.border-b-light{
+    border-bottom:1px solid #1c2b1e33;
+}
+.border-t{
+    border-top:1px solid #1c2b1e;
+}
+.border-r{
+    border-right:1px solid #1c2b1e;
+}
+@media(max-width:1025px){
+    .border-t-no{
+        border-top:0px solid #1c2b1e;
+    }
+    .border-r-no{
+        border-right:0px solid #1c2b1e;
+    }
+}

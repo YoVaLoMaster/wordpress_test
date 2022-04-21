@@ -1,0 +1,61 @@
+/*
+==============================
+Page: All
+Section: Footer
+==============================
+*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer li{
+    list-style:none;
+    margin:0px!important;
+    padding:0px;
+}
+footer p{
+    margin:0px;
+}
+#main-menu-footer li a{
+    font-size:28px;
+    font-family: 'Reckless';
+    color:#172c1d;
+    line-height: 38px;
+}
+#main-menu-footer-contacto li a{
+    font-size:16px;
+    color:#172c1d;
+}
+#main-menu-footer-contacto{
+    display: flex;
+    flex-direction: row;
+}
+.legalcontent,
+.legalcontent p{
+    font-size:16px;
+    color:#404537;
+}
+@media(max-width:1025px){
+    footer {
+        height: 490px;
+    }
+    #main-menu-footer li a {
+        font-size: 14px;
+        font-family: 'Helvetica';
+        line-height: 30px;
+    }
+    #main-menu-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #main-menu-footer-contacto li a,
+    .legalcontent, .legalcontent p {
+        font-size: 14px;
+    }
+
+    .mainimg-footer img{
+        width:210px;
+    }
+}

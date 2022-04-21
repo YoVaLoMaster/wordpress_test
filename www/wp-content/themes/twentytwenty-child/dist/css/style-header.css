@@ -1,0 +1,31 @@
+header{
+    background: #ffffffaf;
+    height:95px;
+    position: absolute;
+    z-index: 9;
+    width: 99.1vw;
+    /* width: 100vw; */
+}
+header:hover{
+    background: #ffffff;
+}
+
+
+header, 
+header:hover{
+    -webkit-transition: all 0.1s 0s ease;
+    -moz-transition: all 0.1s 0s ease;
+    -o-transition: all 0.1s 0s ease;
+    transition: all 0.1s 0s ease;
+}
+
+
+@media(max-width:1025px){
+ 
+
+   
+   
+}
+@media(min-width:1026px) and  (max-width:1600px){
+ 
+}
