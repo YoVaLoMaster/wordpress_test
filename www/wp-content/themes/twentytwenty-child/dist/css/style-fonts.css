@@ -1,0 +1,213 @@
+/*
+==============================
+Font Family
+==============================
+*/
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url(fonts/Helvetica_Neue_LT_Std_Roman.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Reckless';
+  src: url(fonts/Reckless_Neue_Regular.otf);
+  font-weight: 300;
+}
+
+
+.ff-body {
+  font-family: 'Helvetica'
+}
+
+.ff-title {
+  font-family: 'Reckless';
+}
+
+body {
+  font-family: 'Helvetica';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  font-family: 'Reckless';
+}
+
+p,
+a,
+input,
+textarea,
+ul li,
+ol li,
+span,
+table,
+table tr,
+table tr td {
+  font-family: 'Helvetica';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+
+/*
+==============================
+Font Size
+==============================
+*/
+.fs-14{
+  font-size: 0.875em;
+}
+.fs-16{
+  font-size: 1em;
+}
+.fs-18{
+  font-size: 1.125em;
+}
+.fs-20{
+  font-size: 1.25em;
+}
+.fs-22{
+  font-size: 1.375em;
+}
+.fs-30{
+  font-size: 1.875em;
+}
+.fs-35{
+  font-size:2.188em;
+}
+.fs-40{
+  font-size: 2.5em;
+}
+.fs-50{
+  font-size: 3.125em;
+}
+
+/*
+==============================
+Font Lineheight
+==============================
+*/
+.lg-13{
+  line-height: 1.3em;
+}
+/*
+==============================
+Font Weight
+==============================
+*/
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+/*
+==============================
+Font Style
+==============================
+*/
+
+b,
+strong {
+  font-weight: 700;
+}
+
+/*
+==============================
+Header Sizes
+==============================
+*/
+
+h1 {
+  font-size: 2.188em;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-size: 1.25em;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1em;
+}
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
+h5 {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+
+
+/*
+==============================
+Font Sizes - Media Queries
+==============================
+*/
+
+@media (max-width: 576px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {
+  .fs-50 {
+    font-size: 2.5em;
+  }
+  h1,
+  .fs-35
+  {
+    font-size: 1.9em;
+    line-height: 1em;
+  }
+  .spacemovil{
+    min-height:70px;
+  }
+  p, a, input, textarea, ul li, ol li, span, table, table tr, table tr td {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
