@@ -29,17 +29,15 @@
 		<section class="mt-5">
 			<div class="wrapper">
 				<div class="container-fluid px-0 py-3">
-					<div class="row py-5">
+					<div class="py-0 py-lg-5">
 						<div class="col-12">
-						<?php
-						 	if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-								the_excerpt();
-							} else {
-								the_content( __( 'Continue reading', 'twentytwenty' ) );
-							}
-						?> 
-						
-
+							<?php
+								if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
+									the_excerpt();
+								} else {
+									the_content( __( 'Continue reading', 'twentytwenty' ) );
+								}
+							?> 
 						</div>
 					</div>
 				</div>
