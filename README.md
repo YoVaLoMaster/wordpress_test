@@ -1,3 +1,13 @@
+# Accesos Wordpress
+
+Estos son los accesos para el administrador del sitio. 
+
+Usuario: elabsconsulting
+
+Contraseña: ElabsConsulting555*
+
+-----------------------------------------------------------
+
 # Prueba Wordpress ElabsConsulting
 
 Evaluación para el desarrollo de Wordpress, elaborada por ElabsConsulting.
