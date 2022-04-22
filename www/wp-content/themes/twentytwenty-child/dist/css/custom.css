@@ -1,3 +1,21 @@
+.previous-post,
+.next-post
+ {
+    background: #a9145b;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color:#ffffff
+}
+.previous-post:hover,
+.next-post:hover
+ {
+    background: #7a0d42;
+    color:#ffffff
+}
+.pagination-single-inner{
+    display: flex;
+    justify-content: space-between;
+}
 .title-slier{
     position: absolute;
     top: 50%;
@@ -45,7 +63,7 @@
     color: #101010;
 }
 .next-post{
-    float: right;
+    margin-left: 100px;
     margin-right: 100px;
     direction: rtl;
 }
@@ -57,4 +75,60 @@ a:visited {
 }
 .infocotact p{
     font-size: 35px;
+}
+
+@media(max-width:960px){
+    .slick-slide img {
+        width: 210%;
+    }
+    header {
+        width: 100vw;
+        height: 65px;
+
+    }
+    .title-slier h1, .title-slier h1 {
+        font-size: 30px;
+    }
+    .title-slier {
+        position: absolute;
+        top: 36%;
+        margin-left: 30px;
+        width: 300px;
+    }
+    .control-slider-sev{
+        display: none;
+    }
+    .custom-logo-link img{
+        width: 30px;
+        height: 30px;
+    }
+    #main-menu a {
+        font-size: 16px;
+        color: #565656;
+    }
+    .title-slier p {
+        font-size: 16px;
+    }
+    .entry-header-inner {
+        padding: 90px 0px 50px 0px;
+    }
+    .entry-header-inner h1 {
+        font-size: 35px;
+    }
+    .previous-post {
+        margin-left: 30px;
+    }
+    .next-post {
+        margin-right: 30px;
+    }
+    .customheightsection{
+        min-height: 300px;
+    }
+    .customheightsection h1{
+        font-size: 25px;
+    }
+    .contacto{
+        display: flex!important;
+    flex-direction: column-reverse;
+    }
 }

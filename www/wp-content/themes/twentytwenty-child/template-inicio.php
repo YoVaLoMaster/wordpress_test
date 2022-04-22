@@ -47,15 +47,15 @@
 </section>
 <section>
     <div class="wrapper">
-        <div class="container-fluid px-0 py-5">
-            <div class="row py-5">
-                <div class="col-12 ">
+    <div class="container-fluid px-0 py-5">
+            <div class=" py-lg-5 pb-5 pt-0 px-3 ">
+                <div class="col-12 px-3 px-lg-0">
                     <h1>Portfolio</h1>
                 </div>
             </div>
 
-            <div class="row pb-5">
-                <div class="col-12 d-flex px-0">
+            <div class=" pb-lg-5 pb-0">
+                <div class="d-flex flex-wrap px-3 px-lg-0">
 
                     <?php
                         $args = array(
@@ -67,11 +67,11 @@
                                 while ( $the_query->have_posts() ) {
                                     $the_query->the_post();
                                     // print_r($the_query);
-                                    echo '<div class="col-2 px-2">
+                                    echo '<div class="col-12 col-lg-4 pb-5">
                                         <div class="card ">
                                             <img src="'.get_the_post_thumbnail_url().'" class="card-img-top" alt="'.get_the_title().'">
                                             <div class="card-body">
-                                                <h5 class="card-title">'.get_the_title().'</h5>
+                                                <h4 class="card-title">'.get_the_title().'</h4>
                                                 <p class="card-text">'.limite_extracto( get_the_excerpt(), '8' ).'</p>
                                                 <a href="'.get_the_guid().'" class="btn btn-primary py-2 px-5">Ver mas </a>
                                             </div>

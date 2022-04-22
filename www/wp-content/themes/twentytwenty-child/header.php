@@ -15,8 +15,9 @@
 <body <?php body_class(); ?>>
 
 <div id="container">
+	
 	<header>
-	<?php  if (!wp_is_mobile()): ?>
+
 		<nav class="navbar-main navbar-expand-lg
 			<?php
 			if ( is_user_logged_in() ) {
@@ -64,48 +65,7 @@
 			</div>
 		</nav>
  
-	<?php  elseif (wp_is_mobile()): ?>
-		<div class="wrapper">
-			<div class="container-fluid">
-				<div class="row my-3">
-					<div class="col-4">
-						<a class="fs-16 iconmenu-mobil class-show forcecolor-clear" id="openmenu-mobile">
-							<?php _e('Menu', 'raul') ?>
-						</a>
-						<a class="fs-16 iconmenu-mobil class-hide forcecolor-dark" id="closemenu-mobile">
-							<span class="con-arrow-thin-left"></span> <?php _e('Cerrar', 'raul') ?>
-						</a>
-					</div>
-					<div class="col-8">
-						<?php
-							wp_nav_menu([
-							'menu'	           => 'contacto',
-							'theme_location'   => 'contacto',
-							'container'        => 'div',
-							'container_id'     => 'navbar_contacto',
-							'depth'            => 2,
-							'container_class'  => 'menu ',
-							'menu_id'          => 'main-menu-mobil-contacto',
-							'menu_class'       => 'navbar-nav nav-primary',
-							'fallback_cb'      => 'WP_Bootstrap_Navwalker::fallback',
-							'walker'           => new WP_Bootstrap_Navwalker()
-							]);
-						?>
-					</div>
-				</div>
-		
-
-				<div class="row">
-					<div class="col-12">
-						<div class="navbar-brand-mobile py-0">
-							<a href="<?php echo get_home_url(); ?>"><span class="icon-logo fs-50 forcecolor-clear"></span></a>
-						</div> 
-					</div>
-					
-				</div>  
-			</div>  
-		</div>  
-	<?php endif; ?>	
+	
 	</header>
 
 
