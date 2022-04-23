@@ -26,7 +26,7 @@ if ( $next_post || $prev_post ) {
 
 		<hr class="styled-separator is-style-wide" aria-hidden="true" />
 
-		<div class="pagination-single-inner pb-3">
+		<div class="pagination-single-inner">
 
 			<?php
 			if ( $prev_post ) {

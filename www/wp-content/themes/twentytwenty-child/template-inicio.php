@@ -25,7 +25,7 @@
                                     <h1>'.get_the_title().'</h1>
                                     <p>'.get_the_excerpt().'</p>
                                 </div>
-                                <img src="'.get_the_post_thumbnail_url().'" class="card-img-top" alt="'.get_the_title().'">
+                               '.get_the_post_thumbnail( get_the_ID(), "full" ).'
                             </div>        
                         ';
                     }
@@ -47,16 +47,21 @@
 </section>
 <section>
     <div class="wrapper">
-    <div class="container-fluid px-0 py-5">
-            <div class=" py-lg-5 pb-5 pt-0 px-3 ">
-                <div class="col-12 px-3 px-lg-0">
-                    <h1>Portfolio</h1>
+        <div class="container-fluid px-0 pt-5">
+            <div class="py-lg-5 px-3 px-lg-0 pb-5 d-block d-lg-flex align-items-center">
+                <div class="col-12 col-lg-8 pb-3">
+                    <h1><?php the_field('titulo') ?></h1>
+                </div>
+                <div class="col-12 col-lg-4 d-block d-lg-flex justify-content-end filteroptio">
+                    <select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+                        <option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
+                        <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option', 'post_type' => 'raul' ) ); ?>
+                    </select>
                 </div>
             </div>
 
-            <div class=" pb-lg-5 pb-0">
+            <div class=" pb-0">
                 <div class="d-flex flex-wrap px-3 px-lg-0">
-
                     <?php
                         $args = array(
                             'post_type' => 'raul',
@@ -66,10 +71,9 @@
                         if ( $the_query->have_posts() ) {
                                 while ( $the_query->have_posts() ) {
                                     $the_query->the_post();
-                                    // print_r($the_query);
                                     echo '<div class="col-12 col-lg-4 pb-5">
                                         <div class="card ">
-                                            <img src="'.get_the_post_thumbnail_url().'" class="card-img-top" alt="'.get_the_title().'">
+                                            <img src="'.get_field('imagen', $the_query->ID).'" class="card-img-top" alt="'.get_the_title().'">
                                             <div class="card-body">
                                                 <h4 class="card-title">'.get_the_title().'</h4>
                                                 <p class="card-text">'.limite_extracto( get_the_excerpt(), '8' ).'</p>
@@ -85,6 +89,18 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+</section>
+<section>
+    <div class="wrapper">
+        <div class="container-fluid px-0 pb-lg-5">
+            <div class=" py-lg-5 pb-5 pt-0 px-3 ">
+                <div class="col-12 px-3 px-lg-0">
+                    <h2 class="pb-3"><?php the_field('titulodescripcion') ?></h2>
+                    <p><?php the_field('descripcion') ?></p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
