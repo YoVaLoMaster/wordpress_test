@@ -4,13 +4,13 @@
     background: #a9145b;
     padding: 6px 10px;
     border-radius: 4px;
-    color:#ffffff
+    color:#ffffff!important;
 }
 .previous-post:hover,
 .next-post:hover
  {
     background: #7a0d42;
-    color:#ffffff
+    color:#ffffff!important;
 }
 .pagination-single-inner{
     display: flex;
@@ -25,61 +25,99 @@
     font-size: 50px;
 }
 .title-slier h1, .title-slier p{
-    color:#ffffff;
-    text-shadow: 1px 1px 10px black;
+    color:#8d3b3b;
 }
 .title-slier p{
     font-size: 20px;
 }
 .btn-primary {
-    color: #ffffff;
-    background-color: #a9145b;
-    border-color: #ffffff;
+    color: #ffffff!important;
+    background-color: #a9145b!important;
+    border-color: #fff!important;
 }
 .btn-primary:hover {
-    color: #ffffff;
-    background-color: #a99314;
-    border-color: #ffffff;
+    color: #ffffff!important;
+    background-color: #a99314!important;
+    border-color: #ffffff!important;
 }
 
 .entry-header-inner{
-    padding: 150px 0px;
+    padding: 220px 0px;
 }
 .entry-header-inner h1 {
     font-size: 2.188em;
     line-height: 1.3em;
-    color: white;
+    color: #a9145b;
     font-size: 53px;
-    text-shadow: 1px 1px 10px black;
 }
 .meta-text a, .meta-icon{
-    color:#ffffff!important;
+    color:#a9145b!important;
 }
 .meta-icon{
     display: none;
 }
+.post-meta-wrapper ul{
+    list-style: none;
+}
 #main-menu a{
     font-size: 20px;
-    color: #101010;
+    color: #a9145b!important;
+}
+.has-text-align-center {
+    text-align: left;
+    padding-left: 100px;
 }
 .next-post{
     margin-left: 100px;
     margin-right: 100px;
     direction: rtl;
 }
+.header-footer-group, body:not(.overlay-header) #site-header .toggle, .menu-modal .toggle {
+    border-bottom: 1px solid #bfbfbf;
+}
+hr, .pagination-single-inner {
+    margin-bottom: 2rem;
+}
+.slider-servicios{
+    border-bottom: 1px solid #bfbfbf;
+}
+
 .previous-post{
     margin-left: 100px;
 }
 a:visited {
-    color: white;
+    color: white!important;
 }
 .infocotact p{
     font-size: 35px;
 }
+.filteroptio select{
+    padding: 7px 20px;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+}
+.post-meta span a{ 
+    color: #a9145b!important;
+}
 
 @media(max-width:960px){
+    .entry-header{
+        background:url(http://localhost/wp-content/uploads/2022/04/barck-general.jpg) !important;
+        background-size: cover!important;
+    }
+    .title-slier{
+        display: none;
+    }
+    #main-menu li{
+        margin-left: 10px;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+
     .slick-slide img {
-        width: 210%;
+        width: 101%;
+        margin-left: -130px;
     }
     header {
         width: 100vw;

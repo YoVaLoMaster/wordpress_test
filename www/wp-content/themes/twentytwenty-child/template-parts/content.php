@@ -31,6 +31,8 @@
 				<div class="container-fluid px-0 py-3">
 					<div class="py-0 py-lg-5">
 						<div class="col-12">
+						
+							<img src="<?php the_field('imagen'); ?>" class="img-fluid d-lg-none d-block pb-5" >
 							<?php
 								if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 									the_excerpt();

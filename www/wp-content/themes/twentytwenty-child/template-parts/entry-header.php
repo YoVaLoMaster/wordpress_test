@@ -12,10 +12,10 @@ $entry_header_classes = '';
 if ( is_singular() ) {
 	$entry_header_classes .= ' header-footer-group';
 }
-
+$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 ?>
 
-<section class="entry-header  has-text-align-center<?php echo esc_attr( $entry_header_classes ); ?>"  style="background:url(<?php the_post_thumbnail_url(); ?>)no-repeat center/cover;">
+<section class="entry-header  has-text-align-center<?php echo esc_attr( $entry_header_classes ); ?>"  style="background:url(<?php echo $image[0]; ?>)no-repeat center/cover;">
 
 	<div class="entry-header-inner section-inner medium">
 
